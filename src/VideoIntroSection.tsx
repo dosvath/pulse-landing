@@ -60,7 +60,7 @@ export function VideoIntroSection() {
       <video
         src={
           isDesktop
-            ? "https://images.pulse-date.com/header-video-desktop.mp4"
+            ? "https://images.pulse-date.com/header-video-desktop-xs.mp4"
             : "https://images.pulse-date.com/landing-video-mobile.mp4"
         }
         autoPlay

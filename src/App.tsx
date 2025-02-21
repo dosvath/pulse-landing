@@ -1,12 +1,18 @@
+import FaceVerificationSection from "./FaceVerificationSection";
+import InternationalSection from "./InternationalSection";
+import { RedefinedSection } from "./RedefinedSection";
 import { VideoIntroSection } from "./VideoIntroSection";
 
 function App() {
   return (
     <div className="flex flex-col bg-zinc-950 text-white items-center  min-h-screen dark">
       <VideoIntroSection />
-      <div className="text-3xl md:text-4xl font-bold text-white mb-6 mt-12">
-        High-End Dating. Redefined.
-      </div>
+      <RedefinedSection />
+      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
+      <FaceVerificationSection />
+      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
+      <InternationalSection />
+      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
     </div>
   );
 }
