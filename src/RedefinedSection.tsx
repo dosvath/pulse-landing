@@ -24,7 +24,7 @@ export function RedefinedSection() {
   function ForMenSection() {
     return (
       <div className="mt-11 flex flex-col gap-y-5">
-        <div className="text-2xl px-8 font-medium gap-y-1 justify-center">
+        <div className="text-3xl px-8 font-medium gap-y-1 justify-center">
           Date the Most <br className="md:hidden" /> Beautiful Women.
         </div>
         <SharedParagraph />
@@ -45,7 +45,7 @@ export function RedefinedSection() {
   function ForWomenSection() {
     return (
       <div className="mt-11 flex flex-col gap-5">
-        <div className="text-2xl font-medium gap-y-1 justify-center px-8 ">
+        <div className="text-3xl font-medium gap-y-1 justify-center px-8 ">
           Start Dating UP.
         </div>
         <SharedParagraph />
