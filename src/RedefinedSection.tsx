@@ -70,12 +70,9 @@ export function RedefinedSection() {
       </div>
       <div className="text-zinc-100 font-thin px-8 md:hidden mt-10 text-lg">
         Join the largest, <strong className="font-bold">verified</strong>{" "}
-        community of the
-        <br />
-        most <strong className="font-bold">beautiful</strong> and{" "}
-        <strong className="font-bold">successful</strong> singles
-        <br />
-        around the world.
+        community of the most <strong className="font-bold">beautiful</strong>{" "}
+        and <strong className="font-bold">successful</strong> singles around the
+        world.
       </div>
       <div className="flex flex-row gap-4 mt-11 w-full items-center justify-center">
         <Button
