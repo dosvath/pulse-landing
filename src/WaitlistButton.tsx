@@ -35,7 +35,12 @@ export default function WaitlistButton({
       <DialogContent className="max-w-md dark text-white">
         <DialogTitle></DialogTitle>
         {open && (
-          <Widget id="booPZMe3" className="h-[300px]" hideHeaders={true} />
+          <Widget
+            id="booPZMe3"
+            className="h-[300px]"
+            hideHeaders={true}
+            inlineOnMobile={true}
+          />
         )}
       </DialogContent>
     </Dialog>
