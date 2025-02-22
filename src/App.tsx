@@ -5,6 +5,8 @@ import InternationalSection from "./InternationalSection";
 import MessagesSection from "./MessagesSection";
 import { RedefinedSection } from "./RedefinedSection";
 import { VideoIntroSection } from "./VideoIntroSection";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <CtaSection />
       <hr className="w-[95vw] mt-8 mb-8 border-t border-white/12" />
       <Footer />
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
