@@ -34,7 +34,9 @@ export default function WaitlistButton({
       <DialogTrigger asChild>{customButton || defaultButton}</DialogTrigger>
       <DialogContent className="max-w-md dark text-white">
         <DialogTitle></DialogTitle>
-        {open && <Widget id="booPZMe3" className="h-[300px]" />}
+        {open && (
+          <Widget id="booPZMe3" className="h-[300px]" hideHeaders={true} />
+        )}
       </DialogContent>
     </Dialog>
   );
