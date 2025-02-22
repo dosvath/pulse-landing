@@ -34,9 +34,7 @@ export default function WaitlistButton({
       <DialogTrigger asChild>{customButton || defaultButton}</DialogTrigger>
       <DialogContent className="max-w-md dark text-white">
         <DialogTitle></DialogTitle>
-        <div className="overflow-hidden rounded-lg h-[270px]">
-          {open && <Widget id="booPZMe3" className="h-[300px]" />}
-        </div>
+        {open && <Widget id="booPZMe3" className="h-[300px]" />}
       </DialogContent>
     </Dialog>
   );
