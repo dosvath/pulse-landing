@@ -37,7 +37,7 @@ export default function WaitlistButton({
         {open && (
           <Widget
             id="booPZMe3"
-            className="h-[300px]"
+            className="md:h-[300px] h-[400px]"
             hideHeaders={true}
             inlineOnMobile={true}
           />
