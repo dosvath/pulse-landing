@@ -1,5 +1,5 @@
 import couple from "@/assets/couple.avif";
-import { Button } from "./components/ui/button";
+import WaitlistButton from "./WaitlistButton";
 
 export default function CtaSection() {
   return (
@@ -15,12 +15,13 @@ export default function CtaSection() {
         <div className="text-4xl font-medium gap-y-1 justify-center text-center">
           Date up. <br className="md:hidden" /> Don't Settle.
         </div>
-        <Button
+        {/* <Button
           asChild
           className="bg-white text-black h-12 text-md font-medium py-3 px-8 rounded-full hover:bg-gray-100 transition"
         >
           <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
-        </Button>
+        </Button> */}
+        <WaitlistButton />
       </div>
     </div>
   );

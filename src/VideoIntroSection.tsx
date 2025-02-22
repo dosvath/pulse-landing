@@ -1,6 +1,6 @@
-import { Button } from "./components/ui/button";
 import { Header } from "./Header";
 import { useMediaQuery } from "./useMediaQuery";
+import WaitlistButton from "./WaitlistButton";
 
 export function VideoIntroSection() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -20,15 +20,16 @@ export function VideoIntroSection() {
             <br />
             around the world.
           </p>
-          <Button
+          {/* <Button
             asChild
             className="bg-white text-black h-12 text-md font-medium py-3 px-8 rounded-full hover:bg-gray-100 transition"
           >
             <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
-          </Button>
+          </Button> */}
+          <WaitlistButton />
           <div className="mt-4 text-white">
             Already a member?{" "}
-            <a href="https://staging.pulse-date.com/" className="underline">
+            <a href="" className="underline">
               Login here
             </a>
           </div>
@@ -45,12 +46,13 @@ export function VideoIntroSection() {
             <div>No Swipes.</div>
             <div> No Games.</div>
           </div>
-          <Button
+          {/* <Button
             asChild
             className="mt-8 bg-white text-black h-12 w-62 text-md font-medium py-3 px-8 rounded-full hover:bg-gray-100 transition"
           >
             <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
-          </Button>
+          </Button> */}
+          <WaitlistButton className="w-62 mt-8" />
         </div>
       </div>
     );
