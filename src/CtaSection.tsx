@@ -3,7 +3,7 @@ import { Button } from "./components/ui/button";
 
 export default function CtaSection() {
   return (
-    <div className="relative w-full mt-12">
+    <div className="relative w-full mt-16">
       <div className="h-[45vh] overflow-hidden">
         <img
           src={couple}
