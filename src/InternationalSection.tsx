@@ -1,4 +1,4 @@
-import searchModal from "@/assets/search-modal-neutral.svg";
+import searchModal from "@/assets/search-modal.avif";
 
 export default function InternationalSection() {
   return (
