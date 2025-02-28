@@ -85,7 +85,7 @@ export default function WaitlistButton({
           } else if (err.status === 400) {
             form.setError("email", {
               type: "manual",
-              message: "Invalid email address ❌",
+              message: "Invalid email address or captcha ❌",
             });
           } else {
             form.setError("email", {
