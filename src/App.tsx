@@ -22,7 +22,7 @@ function App() {
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
       <InternationalSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <MessagesSection />
+      <MessagesSection language={language} />
       <CtaSection language={language} />
       <hr className="w-[95vw] mt-8 mb-8 border-t border-white/12" />
       <Footer />

@@ -46,6 +46,13 @@ export type TranslationTree = {
     TITLE: string;
     SUBHEADING: React.ReactNode;
   };
+  MESSAGES_SECTION: {
+    TITLE: React.ReactNode;
+    SWIPING_SLOW: React.ReactNode;
+    START_CHATTING: string;
+    SHARE_CONTACT: React.ReactNode;
+    PRE_FILLED: React.ReactNode;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -127,6 +134,31 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
         </>
       ),
     },
+    MESSAGES_SECTION: {
+      TITLE: (
+        <>
+          No more endless swiping. <br />
+          Instant, real-time messaging.
+        </>
+      ),
+      SWIPING_SLOW: (
+        <>
+          Swiping is <span className="underline">slow and exhausting</span>.
+        </>
+      ),
+      START_CHATTING:
+        "Start chatting with other members right away with easy messaging shortcuts:",
+      SHARE_CONTACT: (
+        <>
+          Share contact info <strong>in one tap</strong>
+        </>
+      ),
+      PRE_FILLED: (
+        <>
+          <strong>Easy, pre-filled</strong> intro messages
+        </>
+      ),
+    },
   },
   [PlatformLanguage.RUSSIAN]: {
     HEADER: {
@@ -205,6 +237,31 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
           <strong className="text-white">
             недоступным в других приложениях.
           </strong>
+        </>
+      ),
+    },
+    MESSAGES_SECTION: {
+      TITLE: (
+        <>
+          Больше нет бесконечных свайпов. <br />
+          Мгновенные сообщения.
+        </>
+      ),
+      SWIPING_SLOW: (
+        <>
+          Свайп это <span className="underline">медленно и утомительно.</span>.
+        </>
+      ),
+      START_CHATTING:
+        "Начните общаться с другими пользователями прямо с помощью простых ярлыков:",
+      SHARE_CONTACT: (
+        <>
+          Поделитесь контакт <strong>одним касанием</strong>
+        </>
+      ),
+      PRE_FILLED: (
+        <>
+          <strong>Простые, готовые</strong> вступительные сообщения
         </>
       ),
     },

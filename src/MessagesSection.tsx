@@ -4,14 +4,19 @@ import telegram from "@/assets/telegram.svg";
 import whatsapp from "@/assets/whatsapp.svg";
 import typingIndicator from "@/assets/typing-indicator.svg";
 import brain from "@/assets/brain.svg";
+import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "./lib/translations";
 
-export default function MessagesSection() {
+export default function MessagesSection({
+  language,
+}: {
+  language: PlatformLanguage;
+}) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full px-8 mx-auto max-w-6xl">
       <div className="flex flex-col gap-5">
         <div className="text-3xl font-medium gap-y-1 justify-center mb-2 md:mb-0 text-center md:text-left">
-          No more endless swiping. <br />
-          Instant, real-time messaging.
+          {TRANSLATIONS[language].MESSAGES_SECTION.TITLE}
         </div>
         <img
           src={conversationMessage}
@@ -19,11 +24,10 @@ export default function MessagesSection() {
           alt="Conversation Message"
         />
         <div className="font-medium text-center md:text-left">
-          Swiping is <span className="underline">slow and exhausting</span>.
+          {TRANSLATIONS[language].MESSAGES_SECTION.SWIPING_SLOW}
         </div>
         <div className="text-zinc-500 font-medium md:max-w-md mx-auto text-center md:text-left">
-          Start chatting with other members right away with easy messaging
-          shortcuts:
+          {TRANSLATIONS[language].MESSAGES_SECTION.START_CHATTING}
         </div>
         <div className="flex flex-col gap-8 md:gap-6 w-full text-center md:text-left mt-2 md:mt-0">
           <div className="flex flex-col md:flex-row gap-3 items-center justify-center md:justify-start">
@@ -31,9 +35,7 @@ export default function MessagesSection() {
               <img src={telegram} className="w-8 h-8" alt="Telegram" />
               <img src={whatsapp} className="w-8 h-8" alt="Whatsapp" />
             </div>
-            <div>
-              Share contact info <strong>in one tap</strong>
-            </div>
+            <div>{TRANSLATIONS[language].MESSAGES_SECTION.SHARE_CONTACT}</div>
           </div>
           <div className="flex flex-col md:flex-row gap-3 items-center justify-center md:justify-start">
             <div className="flex flex-row gap-1">
@@ -44,9 +46,7 @@ export default function MessagesSection() {
               />
               <img src={brain} className="w-8 h-8" alt="Brain Icon" />
             </div>
-            <div>
-              <strong>Easy, pre-filled</strong> intro messages
-            </div>
+            <div>{TRANSLATIONS[language].MESSAGES_SECTION.PRE_FILLED}</div>
           </div>
         </div>
       </div>
