@@ -4,8 +4,10 @@ import collageWomenSm from "@/assets/collage-women-sm.avif";
 import collageWomenLg from "@/assets/collage-women-lg.avif";
 import collageMenSm from "@/assets/collage-men-sm.avif";
 import collageMenLg from "@/assets/collage-men-lg.avif";
+import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "./lib/translations";
 
-export function RedefinedSection() {
+export function RedefinedSection({ language }: { language: PlatformLanguage }) {
   enum Tabs {
     MEN,
     WOMEN,
@@ -15,9 +17,7 @@ export function RedefinedSection() {
   function SharedParagraph() {
     return (
       <div className="text-zinc-500 font-medium max-w-2xl mx-auto px-8">
-        The Pulse community is carefully curated by our team. Each member's
-        application is thoroughly reviewed, and only the best are approved to
-        join.
+        {TRANSLATIONS[language].REDEFINED_SECTION.SHARED_PARAGRAPH}
       </div>
     );
   }
@@ -25,13 +25,11 @@ export function RedefinedSection() {
     return (
       <div className="mt-11 flex flex-col gap-y-5">
         <div className="text-3xl px-8 font-medium gap-y-1 justify-center">
-          Date the Most <br className="md:hidden" /> Beautiful Women.
+          {TRANSLATIONS[language].REDEFINED_SECTION.FOR_MEN_HEADING}
         </div>
         <SharedParagraph />
         <div className="font-medium mb-4 px-8">
-          Save time and interact only with{" "}
-          <span className="underline">high quality</span> women around the
-          world.
+          {TRANSLATIONS[language].REDEFINED_SECTION.FOR_MEN_SUBHEADING}
         </div>
         <img
           src={collageWomenLg}
@@ -46,12 +44,11 @@ export function RedefinedSection() {
     return (
       <div className="mt-11 flex flex-col gap-5">
         <div className="text-3xl font-medium gap-y-1 justify-center px-8 ">
-          Start Dating UP.
+          {TRANSLATIONS[language].REDEFINED_SECTION.FOR_WOMEN_HEADING}
         </div>
         <SharedParagraph />
         <div className="font-medium px-8">
-          Elevate your life with like-minded,{" "}
-          <span className="underline">high-value</span> men around the world.
+          {TRANSLATIONS[language].REDEFINED_SECTION.FOR_WOMEN_SUBHEADING}
         </div>
         <img
           src={collageMenLg}
@@ -65,14 +62,11 @@ export function RedefinedSection() {
   return (
     <div className="md:mt-16 mt-14 text-white items-center text-center w-full">
       <div className="text-3xl md:text-4xl font-bold flex md:flex-row flex-col gap-2 justify-center">
-        <div>High-End Dating.</div>
-        <div>Redefined.</div>
+        <div>{TRANSLATIONS[language].REDEFINED_SECTION.TITLE_1}</div>
+        <div>{TRANSLATIONS[language].REDEFINED_SECTION.TITLE_2}</div>
       </div>
       <div className="text-zinc-100 font-thin px-8 md:hidden mt-10 text-lg">
-        Join the largest, <strong className="font-bold">verified</strong>{" "}
-        community of the most <strong className="font-bold">beautiful</strong>{" "}
-        and <strong className="font-bold">successful</strong> singles around the
-        world.
+        {TRANSLATIONS[language].REDEFINED_SECTION.MOBILE_SUBHEADING}
       </div>
       <div className="flex flex-row gap-4 mt-11 w-full items-center justify-center">
         <Button
@@ -82,7 +76,7 @@ export function RedefinedSection() {
           }`}
           onClick={() => setActive(Tabs.MEN)}
         >
-          For Men
+          {TRANSLATIONS[language].REDEFINED_SECTION.TAB_FOR_MEN}
         </Button>
         <Button
           variant="outline"
@@ -91,7 +85,7 @@ export function RedefinedSection() {
           }`}
           onClick={() => setActive(Tabs.WOMEN)}
         >
-          For Women
+          {TRANSLATIONS[language].REDEFINED_SECTION.TAB_FOR_WOMEN}
         </Button>
       </div>
       {active === Tabs.MEN ? <ForMenSection /> : <ForWomenSection />}

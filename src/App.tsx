@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="flex flex-col bg-zinc-950 text-white items-center  min-h-screen dark">
       <VideoIntroSection language={language} setLanguage={setLanguage} />
-      <RedefinedSection />
+      <RedefinedSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
       <FaceVerificationSection />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />

@@ -26,6 +26,18 @@ export type TranslationTree = {
     LOGIN_BUTTON: string;
     JOIN_PULSE_BUTTON: string;
   };
+  REDEFINED_SECTION: {
+    TITLE_1: string;
+    TITLE_2: string;
+    MOBILE_SUBHEADING: React.ReactNode;
+    TAB_FOR_MEN: string;
+    TAB_FOR_WOMEN: string;
+    FOR_WOMEN_HEADING: string;
+    FOR_WOMEN_SUBHEADING: React.ReactNode;
+    FOR_MEN_HEADING: React.ReactNode;
+    FOR_MEN_SUBHEADING: React.ReactNode;
+    SHARED_PARAGRAPH: string;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -49,6 +61,42 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       LOGIN_BUTTON: "Login",
       JOIN_PULSE_BUTTON: "Join Pulse",
     },
+    REDEFINED_SECTION: {
+      TITLE_1: "High-End Dating.",
+      TITLE_2: "Redefined.",
+      MOBILE_SUBHEADING: (
+        <>
+          Join the largest, <strong className="font-bold">verified</strong>{" "}
+          community of the most <strong className="font-bold">beautiful</strong>{" "}
+          and <strong className="font-bold">successful</strong> singles around
+          the world.
+        </>
+      ),
+      TAB_FOR_MEN: "For Men",
+      TAB_FOR_WOMEN: "For Women",
+      FOR_WOMEN_HEADING: "Start Dating UP.",
+      FOR_WOMEN_SUBHEADING: (
+        <>
+          Elevate your life with like-minded,{" "}
+          <span className="underline">high-value</span> men around the world.
+        </>
+      ),
+      FOR_MEN_HEADING: (
+        <>
+          Date the Most <br className="md:hidden" /> Beautiful Women.
+        </>
+      ),
+      FOR_MEN_SUBHEADING: (
+        <>
+          Save time and interact only with{" "}
+          <span className="underline">high quality</span> women around the
+          world.
+        </>
+      ),
+      SHARED_PARAGRAPH: `The Pulse community is carefully curated by our team. Each member's
+        application is thoroughly reviewed, and only the best are approved to
+        join.`,
+    },
   },
   [PlatformLanguage.RUSSIAN]: {
     HEADER: {
@@ -70,6 +118,43 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       LOGIN_HERE: "Войти здесь",
       LOGIN_BUTTON: "Войти",
       JOIN_PULSE_BUTTON: "Присоединиться к Pulse",
+    },
+    REDEFINED_SECTION: {
+      TITLE_1: "Высококлассные знакомства.",
+      TITLE_2: "Переопределённые.",
+      MOBILE_SUBHEADING: (
+        <>
+          Присоединяйтесь к крупнейшему,{" "}
+          <strong className="font-bold">проверенному</strong> сообществу самых{" "}
+          <strong className="font-bold">красивых</strong> и{" "}
+          <strong className="font-bold">успешных</strong> одиноких людей по
+          всему миру.
+        </>
+      ),
+      TAB_FOR_MEN: "Для мужчин",
+      TAB_FOR_WOMEN: "Для девушек",
+      FOR_WOMEN_HEADING: "Начните встречаться с лучшими.",
+      FOR_WOMEN_SUBHEADING: (
+        <>
+          Поднимите уровень своей жизни с единомышленниками,{" "}
+          <span className="underline">высокоценными</span> мужчинами по всему
+          миру.
+        </>
+      ),
+      FOR_MEN_HEADING: (
+        <>
+          Встречайтесь с самыми <br className="md:hidden" /> красивыми девушек.
+        </>
+      ),
+      FOR_MEN_SUBHEADING: (
+        <>
+          Экономьте время и общайтесь только с{" "}
+          <span className="underline">качественными</span> девушками по всему
+          миру.
+        </>
+      ),
+      SHARED_PARAGRAPH: `Сообщество Pulse тщательно отбирается нашей командой. Заявка каждого участника
+        тщательно проверяется, и только лучшие получают одобрение на вступление.`,
     },
   },
 };
