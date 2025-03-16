@@ -53,6 +53,9 @@ export type TranslationTree = {
     SHARE_CONTACT: React.ReactNode;
     PRE_FILLED: React.ReactNode;
   };
+  CTA_SECTION: {
+    TITLE: React.ReactNode;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -156,6 +159,13 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       PRE_FILLED: (
         <>
           <strong>Easy, pre-filled</strong> intro messages
+        </>
+      ),
+    },
+    CTA_SECTION: {
+      TITLE: (
+        <>
+          Date up. <br className="md:hidden" /> Don't Settle.
         </>
       ),
     },
@@ -264,6 +274,9 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
           <strong>Простые, готовые</strong> вступительные сообщения
         </>
       ),
+    },
+    CTA_SECTION: {
+      TITLE: <>Не соглашайтесь на меньшее.</>,
     },
   },
 };

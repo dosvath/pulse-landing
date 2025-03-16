@@ -1,6 +1,7 @@
 import couple from "@/assets/couple.avif";
 import WaitlistButton from "./components/WaitlistButton";
 import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "./lib/translations";
 
 export default function CtaSection({
   language,
@@ -18,7 +19,7 @@ export default function CtaSection({
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
         <div className="text-4xl font-medium gap-y-1 justify-center text-center">
-          Date up. <br className="md:hidden" /> Don't Settle.
+          {TRANSLATIONS[language].CTA_SECTION.TITLE}
         </div>
         {/* <Button
           asChild
