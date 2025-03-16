@@ -18,7 +18,7 @@ function App() {
       <VideoIntroSection language={language} setLanguage={setLanguage} />
       <RedefinedSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <FaceVerificationSection />
+      <FaceVerificationSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
       <InternationalSection />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />

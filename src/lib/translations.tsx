@@ -38,6 +38,10 @@ export type TranslationTree = {
     FOR_MEN_SUBHEADING: React.ReactNode;
     SHARED_PARAGRAPH: string;
   };
+  FACE_VERIFICATION_SECTION: {
+    TITLE: React.ReactNode;
+    SUBHEADING: string;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -97,6 +101,16 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
         application is thoroughly reviewed, and only the best are approved to
         join.`,
     },
+    FACE_VERIFICATION_SECTION: {
+      TITLE: (
+        <>
+          No fakes. <br />
+          Face verification required.
+        </>
+      ),
+      SUBHEADING:
+        "Video face and liveness verification is required for all members before joining Pulse.",
+    },
   },
   [PlatformLanguage.RUSSIAN]: {
     HEADER: {
@@ -155,6 +169,16 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       ),
       SHARED_PARAGRAPH: `Сообщество Pulse тщательно отбирается нашей командой. Заявка каждого участника
         тщательно проверяется, и только лучшие получают одобрение на вступление.`,
+    },
+    FACE_VERIFICATION_SECTION: {
+      TITLE: (
+        <>
+          Никаких фейков. <br />
+          Обязательная верификация.
+        </>
+      ),
+      SUBHEADING:
+        "Видео-верификация лица и живости обязательно для всех участников перед вступлением в Pulse.",
     },
   },
 };
