@@ -1,7 +1,12 @@
 import couple from "@/assets/couple.avif";
 import WaitlistButton from "./components/WaitlistButton";
+import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
 
-export default function CtaSection() {
+export default function CtaSection({
+  language,
+}: {
+  language: PlatformLanguage;
+}) {
   return (
     <div className="relative w-full mt-16">
       <div className="h-[45vh] overflow-hidden">
@@ -21,7 +26,7 @@ export default function CtaSection() {
         >
           <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
         </Button> */}
-        <WaitlistButton />
+        <WaitlistButton language={language} />
       </div>
     </div>
   );

@@ -1,8 +1,16 @@
 import WaitlistButton from "./components/WaitlistButton";
+import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
 import { Header } from "./Header";
 import { useMediaQuery } from "./hooks/useMediaQuery";
+import { TRANSLATIONS } from "./lib/translations";
 
-export function VideoIntroSection() {
+export function VideoIntroSection({
+  language,
+  setLanguage,
+}: {
+  language: PlatformLanguage;
+  setLanguage: (newLanguage: PlatformLanguage) => void;
+}) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
   function DesktopText() {
@@ -10,15 +18,10 @@ export function VideoIntroSection() {
       <div className="absolute top-1/2 left-0 transform -translate-y-1/3 w-full">
         <div className="max-w-5xl mx-auto px-8">
           <h1 className="text-5xl font-bold text-white mb-6">
-            No Swipes. No Games.
+            {TRANSLATIONS[language].HEADER.TITLE_DESKTOP}
           </h1>
           <p className="text-xl text-zinc-300 mb-8">
-            Join the largest, <strong>verified</strong> community of the
-            <br />
-            most <strong>beautiful</strong> and <strong>successful</strong>{" "}
-            singles
-            <br />
-            around the world.
+            {TRANSLATIONS[language].HEADER.SUBHEADING}
           </p>
           {/* <Button
             asChild
@@ -26,11 +29,11 @@ export function VideoIntroSection() {
           >
             <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
           </Button> */}
-          <WaitlistButton />
+          <WaitlistButton language={language} />
           <div className="mt-4 text-white">
-            Already a member?{" "}
+            {TRANSLATIONS[language].HEADER.ALREADY_MEMBER}{" "}
             <a href="" className="underline">
-              Login here
+              {TRANSLATIONS[language].HEADER.LOGIN_HERE}
             </a>
           </div>
         </div>
@@ -43,8 +46,8 @@ export function VideoIntroSection() {
       <div className="absolute top-3/4 left-0 transform -translate-y-1/2 w-full">
         <div className="max-w-5xl mx-auto px-8 w-full text-center">
           <div className="text-5xl font-bold text-white flex flex-col gap-3">
-            <div>No Swipes.</div>
-            <div> No Games.</div>
+            <div>{TRANSLATIONS[language].HEADER.MOBILE_TITLE_PART1}</div>
+            <div>{TRANSLATIONS[language].HEADER.MOBILE_TITLE_PART2}</div>
           </div>
           {/* <Button
             asChild
@@ -52,7 +55,7 @@ export function VideoIntroSection() {
           >
             <a href="https://staging.pulse-date.com/#/sign-up">Join Pulse</a>
           </Button> */}
-          <WaitlistButton className="w-62 mt-8" />
+          <WaitlistButton language={language} className="w-62 mt-8" />
         </div>
       </div>
     );
@@ -72,7 +75,7 @@ export function VideoIntroSection() {
         className="w-full h-[90vh] object-cover opacity-45"
       />
       <div className="absolute top-0 left-0 w-full">
-        <Header />
+        <Header language={language} setLanguage={setLanguage} />
       </div>
       {isDesktop ? <DesktopText /> : <MobileText />}
     </div>

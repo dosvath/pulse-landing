@@ -22,15 +22,19 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { PlatformLanguage } from "@/generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "@/lib/translations";
 
 const emailSchema = z.object({
   email: z.string().email("Please enter a valid email address."),
 });
 
 export default function WaitlistButton({
+  language,
   className,
   customButton,
 }: {
+  language: PlatformLanguage;
   className?: string;
   customButton?: ReactNode;
 }) {
@@ -105,7 +109,7 @@ export default function WaitlistButton({
         className
       )}
     >
-      Join Pulse
+      {TRANSLATIONS[language].HEADER.JOIN_PULSE_BUTTON}
     </Button>
   );
 

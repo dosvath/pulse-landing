@@ -1,13 +1,21 @@
-import instagram from "@/assets/instagram.svg";
 import logo from "@/assets/logo-w-text.svg";
 import { Button } from "./components/ui/button";
 import WaitlistButton from "./components/WaitlistButton";
+import LanguageSelector from "./components/LanguageSelector";
+import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "./lib/translations";
 
-export function Header() {
+export function Header({
+  language,
+  setLanguage,
+}: {
+  language: PlatformLanguage;
+  setLanguage: (newLanguage: PlatformLanguage) => void;
+}) {
   return (
     <div className="w-full justify-between p-4 md:pt-6 flex max-w-7xl mx-auto">
       <img src={logo} alt="Pulse Logo" className="h-8" />
-      <div className="flex flex-row md:space-x-4 items-center">
+      <div className="flex flex-row space-x-3 items-center">
         {/* <Button
           variant="ghost"
           className="border border-white hover:bg-white/10"
@@ -16,27 +24,17 @@ export function Header() {
           <a href="https://app.pulse-date.com">Login</a>
         </Button> */}
         <WaitlistButton
+          language={language}
           customButton={
             <Button
               variant="ghost"
               className="border border-white hover:bg-white/10"
             >
-              Login
+              {TRANSLATIONS[language].HEADER.LOGIN_BUTTON}
             </Button>
           }
         />
-        <a
-          href="https://instagram.com/pulsedating"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:block"
-        >
-          <img
-            src={instagram}
-            alt="Instagram Logo"
-            className="w-6 h-6 cursor-pointer"
-          />
-        </a>
+        <LanguageSelector language={language} setLanguage={setLanguage} />
       </div>
     </div>
   );
