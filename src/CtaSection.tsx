@@ -1,5 +1,5 @@
 import couple from "@/assets/couple.avif";
-import WaitlistButton from "./WaitlistButton";
+import WaitlistButton from "./components/WaitlistButton";
 
 export default function CtaSection() {
   return (

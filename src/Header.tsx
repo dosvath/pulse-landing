@@ -1,7 +1,7 @@
 import instagram from "@/assets/instagram.svg";
 import logo from "@/assets/logo-w-text.svg";
 import { Button } from "./components/ui/button";
-import WaitlistButton from "./WaitlistButton";
+import WaitlistButton from "./components/WaitlistButton";
 
 export function Header() {
   return (

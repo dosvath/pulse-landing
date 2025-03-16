@@ -1,6 +1,6 @@
+import WaitlistButton from "./components/WaitlistButton";
 import { Header } from "./Header";
-import { useMediaQuery } from "./useMediaQuery";
-import WaitlistButton from "./WaitlistButton";
+import { useMediaQuery } from "./hooks/useMediaQuery";
 
 export function VideoIntroSection() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
