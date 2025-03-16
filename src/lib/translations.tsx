@@ -135,11 +135,10 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       MOBILE_TITLE_PART2: "Никаких игр.",
       SUBHEADING: (
         <>
-          Присоединяйтесь к крупнейшему, <strong>проверенному</strong>{" "}
+          Присоединяйтесь к самому большому, <strong>проверенному</strong>{" "}
           сообществу
           <br />
-          самых <strong>красивых</strong> и <strong>успешных</strong> одиноких
-          людей
+          самых <strong>красивых</strong> и <strong>успешных</strong> одиночек
           <br />
           по всему миру.
         </>
@@ -154,11 +153,11 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       TITLE_2: "Переопределено.",
       MOBILE_SUBHEADING: (
         <>
-          Присоединяйтесь к крупнейшему,{" "}
+          Присоединяйтесь к самому большому,{" "}
           <strong className="font-bold">проверенному</strong> сообществу самых{" "}
           <strong className="font-bold">красивых</strong> и{" "}
-          <strong className="font-bold">успешных</strong> одиноких людей по
-          всему миру.
+          <strong className="font-bold">успешных</strong> одиночек по всему
+          миру.
         </>
       ),
       TAB_FOR_MEN: "Для мужчин",
@@ -173,7 +172,8 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       ),
       FOR_MEN_HEADING: (
         <>
-          Встречайтесь с самыми <br className="md:hidden" /> красивыми девушек.
+          Встречайтесь с самыми <br className="md:hidden" /> красивыми
+          девушками.
         </>
       ),
       FOR_MEN_SUBHEADING: (
@@ -183,8 +183,8 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
           миру.
         </>
       ),
-      SHARED_PARAGRAPH: `Сообщество Pulse тщательно отбирается нашей командой. Заявка каждого участника
-        тщательно проверяется, и только лучшие получают одобрение на вступление.`,
+      SHARED_PARAGRAPH: `Наша команда тщательно следит за деятельностью сообщества Pulse.
+      Заявки каждого участника тщательно рассматриваются, и только лучшие из них принимаются в сообщество.`,
     },
     FACE_VERIFICATION_SECTION: {
       TITLE: (
