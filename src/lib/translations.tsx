@@ -259,7 +259,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       ),
       SWIPING_SLOW: (
         <>
-          Свайп это <span className="underline">медленно и утомительно.</span>.
+          Свайп это <span className="underline">медленно и утомительно</span>.
         </>
       ),
       START_CHATTING:
