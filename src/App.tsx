@@ -20,7 +20,7 @@ function App() {
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
       <FaceVerificationSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <InternationalSection />
+      <InternationalSection language={language} />
       <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
       <MessagesSection />
       <CtaSection language={language} />

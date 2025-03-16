@@ -42,6 +42,10 @@ export type TranslationTree = {
     TITLE: React.ReactNode;
     SUBHEADING: string;
   };
+  INTERNATIONAL_SECTION: {
+    TITLE: string;
+    SUBHEADING: React.ReactNode;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -111,6 +115,18 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       SUBHEADING:
         "Video face and liveness verification is required for all members before joining Pulse.",
     },
+    INTERNATIONAL_SECTION: {
+      TITLE: "Search by multiple cities and nationalities at once.",
+      SUBHEADING: (
+        <>
+          Easily get matches across multiple locations ahead of your travels.
+          Search based on nationality and other filters previously{" "}
+          <strong className="text-white">
+            not available on any other dating apps.
+          </strong>
+        </>
+      ),
+    },
   },
   [PlatformLanguage.RUSSIAN]: {
     HEADER: {
@@ -135,7 +151,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
     },
     REDEFINED_SECTION: {
       TITLE_1: "Высококлассные знакомства.",
-      TITLE_2: "Переопределённые.",
+      TITLE_2: "Переопределено.",
       MOBILE_SUBHEADING: (
         <>
           Присоединяйтесь к крупнейшему,{" "}
@@ -179,6 +195,18 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       ),
       SUBHEADING:
         "Видео-верификация лица и живости обязательно для всех участников перед вступлением в Pulse.",
+    },
+    INTERNATIONAL_SECTION: {
+      TITLE: "Поиск по городам и национальностям одновременно.",
+      SUBHEADING: (
+        <>
+          Легко находите совпадения в разных местах перед поездкой. Поиск по
+          национальности и другим фильтрам, ранее{" "}
+          <strong className="text-white">
+            недоступным в других приложениях.
+          </strong>
+        </>
+      ),
     },
   },
 };
