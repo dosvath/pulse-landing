@@ -84,17 +84,18 @@ export default function WaitlistButton({
           if (err.status === 409) {
             form.setError("email", {
               type: "manual",
-              message: "Already on the waitlist 🎉",
+              message:
+                TRANSLATIONS[language].WAITLIST_MODAL.ALREADY_ON_WAITLIST,
             });
           } else if (err.status === 400) {
             form.setError("email", {
               type: "manual",
-              message: "Invalid email address or captcha ❌",
+              message: TRANSLATIONS[language].WAITLIST_MODAL.INVALID_EMAIL,
             });
           } else {
             form.setError("email", {
               type: "manual",
-              message: "An error occurred.",
+              message: TRANSLATIONS[language].WAITLIST_MODAL.UNKNOWN_ERROR,
             });
           }
         },
@@ -118,7 +119,7 @@ export default function WaitlistButton({
       <DialogTrigger asChild>{customButton || defaultButton}</DialogTrigger>
       <DialogContent className="max-w-md dark text-white">
         <DialogTitle className="mb-4 font-light">
-          Get notified when Pulse is live
+          {TRANSLATIONS[language].WAITLIST_MODAL.TITLE}
         </DialogTitle>
         <Form {...form}>
           <form
@@ -154,7 +155,9 @@ export default function WaitlistButton({
               className="w-full"
               disabled={enterWaitlistMutation.isPending || !captcha}
             >
-              {enterWaitlistMutation.isPending ? "Sending..." : "Continue"}
+              {enterWaitlistMutation.isPending
+                ? TRANSLATIONS[language].WAITLIST_MODAL.SENDING_BUTTON
+                : TRANSLATIONS[language].WAITLIST_MODAL.CONTINUE_BUTTON}
             </Button>
           </form>
         </Form>

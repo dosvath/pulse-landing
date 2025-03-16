@@ -56,6 +56,14 @@ export type TranslationTree = {
   CTA_SECTION: {
     TITLE: React.ReactNode;
   };
+  WAITLIST_MODAL: {
+    TITLE: string;
+    SENDING_BUTTON: string;
+    CONTINUE_BUTTON: string;
+    ALREADY_ON_WAITLIST: string;
+    INVALID_EMAIL: string;
+    UNKNOWN_ERROR: string;
+  };
 };
 
 export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
@@ -169,6 +177,14 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
         </>
       ),
     },
+    WAITLIST_MODAL: {
+      TITLE: "Get notified when Pulse is live",
+      SENDING_BUTTON: "Sending",
+      CONTINUE_BUTTON: "Continue",
+      ALREADY_ON_WAITLIST: "Already on the waitlist 🎉",
+      INVALID_EMAIL: "Invalid email address or captcha ❌",
+      UNKNOWN_ERROR: "An error occurred.",
+    },
   },
   [PlatformLanguage.RUSSIAN]: {
     HEADER: {
@@ -277,6 +293,14 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
     },
     CTA_SECTION: {
       TITLE: <>Не соглашайтесь на меньшее.</>,
+    },
+    WAITLIST_MODAL: {
+      TITLE: "Получите уведомление, когда Pulse запустится",
+      SENDING_BUTTON: "Отправка",
+      CONTINUE_BUTTON: "Продолжить",
+      ALREADY_ON_WAITLIST: "Уже в списке ожидания 🎉",
+      INVALID_EMAIL: "Неверный адрес электронной почты или капча ❌",
+      UNKNOWN_ERROR: "Произошла ошибка.",
     },
   },
 };
