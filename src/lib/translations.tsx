@@ -194,11 +194,10 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       SUBHEADING: (
         <>
           Присоединяйтесь к самому большому, <strong>проверенному</strong>{" "}
-          сообществу
           <br />
-          самых <strong>красивых</strong> и <strong>успешных</strong> одиночек
+          сообществу <strong>красивых</strong> и <strong>успешных</strong>
           <br />
-          по всему миру.
+          людей по всему миру.
         </>
       ),
       ALREADY_MEMBER: "Уже участник?",
@@ -207,15 +206,14 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       JOIN_PULSE_BUTTON: "Присоединиться к Pulse",
     },
     REDEFINED_SECTION: {
-      TITLE_1: "Высококлассные знакомства.",
+      TITLE_1: "Высокоуровневые знакомства.",
       TITLE_2: "Переопределено.",
       MOBILE_SUBHEADING: (
         <>
           Присоединяйтесь к самому большому,{" "}
-          <strong className="font-bold">проверенному</strong> сообществу самых{" "}
+          <strong className="font-bold">проверенному</strong> сообществу{" "}
           <strong className="font-bold">красивых</strong> и{" "}
-          <strong className="font-bold">успешных</strong> одиночек по всему
-          миру.
+          <strong className="font-bold">успешных</strong> людей по всему миру.
         </>
       ),
       TAB_FOR_MEN: "Для мужчин",
@@ -237,8 +235,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       FOR_MEN_SUBHEADING: (
         <>
           Экономьте время и общайтесь только с{" "}
-          <span className="underline">качественными</span> девушками по всему
-          миру.
+          <span className="underline">лучшими</span> девушками по всему миру.
         </>
       ),
       SHARED_PARAGRAPH: `Наша команда тщательно следит за деятельностью сообщества Pulse.
@@ -252,7 +249,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
         </>
       ),
       SUBHEADING:
-        "Видео-верификация лица и живости обязательно для всех участников перед вступлением в Pulse.",
+        "Видео-верификация и оживленность лица обязательна для всех участников перед вступлением в Pulse.",
     },
     INTERNATIONAL_SECTION: {
       TITLE: "Поиск по городам и национальностям одновременно.",
@@ -282,7 +279,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
         "Начните общаться с другими пользователями прямо с помощью простых ярлыков:",
       SHARE_CONTACT: (
         <>
-          Поделитесь контакт <strong>одним касанием</strong>
+          Поделитесь контактом <strong>одним касанием</strong>
         </>
       ),
       PRE_FILLED: (
