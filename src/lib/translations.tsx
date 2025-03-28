@@ -278,9 +278,10 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
     },
     CTA_SECTION: {
       TITLE: (
-        <>
-          Выбирайте лучшее. <br className="md:hidden" /> Без компромиссов.
-        </>
+        <div className="flex flex-col md:flex-row text-3xl gap-3">
+          <div>Выбирайте лучшее.</div>
+          <div>Без компромиссов.</div>
+        </div>
       ),
     },
     WAITLIST_MODAL: {
