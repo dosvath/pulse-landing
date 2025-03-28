@@ -46,7 +46,9 @@ export default function MessagesSection({
               />
               <img src={brain} className="w-8 h-8" alt="Brain Icon" />
             </div>
-            <div>{TRANSLATIONS[language].MESSAGES_SECTION.PRE_FILLED}</div>
+            <div className="flex-1">
+              {TRANSLATIONS[language].MESSAGES_SECTION.PRE_FILLED}
+            </div>
           </div>
         </div>
       </div>
