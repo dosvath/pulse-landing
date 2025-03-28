@@ -14,7 +14,7 @@ export default function MessagesSection({
 }) {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full px-8 mx-auto max-w-6xl">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 md:max-w-md">
         <div className="text-3xl font-medium gap-y-1 justify-center mb-2 md:mb-0 text-center md:text-left">
           {TRANSLATIONS[language].MESSAGES_SECTION.TITLE}
         </div>
@@ -26,7 +26,7 @@ export default function MessagesSection({
         <div className="font-medium text-center md:text-left">
           {TRANSLATIONS[language].MESSAGES_SECTION.SWIPING_SLOW}
         </div>
-        <div className="text-zinc-500 font-medium md:max-w-md mx-auto text-center md:text-left">
+        <div className="text-zinc-500 font-medium text-center md:text-left">
           {TRANSLATIONS[language].MESSAGES_SECTION.START_CHATTING}
         </div>
         <div className="flex flex-col gap-8 md:gap-6 w-full text-center md:text-left mt-2 md:mt-0">

@@ -61,7 +61,7 @@ export function RedefinedSection({ language }: { language: PlatformLanguage }) {
 
   return (
     <div className="md:mt-16 mt-14 text-white items-center text-center w-full">
-      <div className="text-3xl md:text-4xl font-bold flex md:flex-row flex-col gap-2 justify-center">
+      <div className="text-3xl md:text-4xl font-bold flex lg:flex-row flex-col gap-2 justify-center">
         <div>{TRANSLATIONS[language].REDEFINED_SECTION.TITLE_1}</div>
         <div>{TRANSLATIONS[language].REDEFINED_SECTION.TITLE_2}</div>
       </div>
