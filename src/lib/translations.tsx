@@ -88,8 +88,8 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
       JOIN_PULSE_BUTTON: "Join Pulse",
     },
     REDEFINED_SECTION: {
-      TITLE_1: "High-End Dating.",
-      TITLE_2: "Redefined.",
+      TITLE_1: "A New Standard",
+      TITLE_2: "for Global Romance.",
       MOBILE_SUBHEADING: (
         <>
           Join the largest, <strong className="font-bold">verified</strong>{" "}
