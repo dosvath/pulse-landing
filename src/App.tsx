@@ -1,35 +1,59 @@
-import { useState } from "react";
-import CtaSection from "./CtaSection";
-import FaceVerificationSection from "./FaceVerificationSection";
-import Footer from "./Footer";
-import InternationalSection from "./InternationalSection";
-import MessagesSection from "./MessagesSection";
-import { RedefinedSection } from "./RedefinedSection";
-import { VideoIntroSection } from "./VideoIntroSection";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { getDefaultLanguage } from "./lib/translations";
+import {
+  createBrowserRouter,
+  Navigate,
+  Outlet,
+  RouterProvider,
+  ScrollRestoration,
+} from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import TermsPage from "./pages/Terms";
+import PrivacyPolicyPage from "./pages/Privacy";
+import LogoBlackBar from "./sections/LogoBlackBar";
+import Footer from "./sections/Footer";
 
 function App() {
-  const [language, setLanguage] = useState(getDefaultLanguage());
+  const router = createBrowserRouter([
+    {
+      element: (
+        <>
+          <ScrollRestoration />
+          <Outlet />
+        </>
+      ),
+      children: [
+        {
+          path: "/",
+          element: <MainPage />,
+        },
+        {
+          path: "/terms",
+          element: (
+            <>
+              <LogoBlackBar />
+              <TermsPage />
+              <Footer />
+            </>
+          ),
+        },
+        {
+          path: "/privacy",
+          element: (
+            <>
+              <LogoBlackBar />
+              <PrivacyPolicyPage />
+              <Footer />
+            </>
+          ),
+        },
+        {
+          path: "*",
+          element: <Navigate to="/" replace />,
+        },
+      ],
+    },
+  ]);
 
-  return (
-    <div className="flex flex-col bg-zinc-950 text-white items-center  min-h-screen dark">
-      <VideoIntroSection language={language} setLanguage={setLanguage} />
-      <RedefinedSection language={language} />
-      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <FaceVerificationSection language={language} />
-      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <InternationalSection language={language} />
-      <hr className="w-[90vw] mt-16 mb-14 border-t border-white/12" />
-      <MessagesSection language={language} />
-      <CtaSection language={language} />
-      <hr className="w-[95vw] mt-8 mb-8 border-t border-white/12" />
-      <Footer />
-      <SpeedInsights />
-      <Analytics />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

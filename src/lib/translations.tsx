@@ -89,7 +89,7 @@ export const TRANSLATIONS: Record<PlatformLanguage, TranslationTree> = {
     },
     REDEFINED_SECTION: {
       TITLE_1: "A New Standard",
-      TITLE_2: "for Global Romance.",
+      TITLE_2: "for Global Romance",
       MOBILE_SUBHEADING: (
         <>
           Join the largest, <strong className="font-bold">verified</strong>{" "}

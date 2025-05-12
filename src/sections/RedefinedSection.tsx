@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button";
 import collageWomenSm from "@/assets/collage-women-sm.avif";
 import collageWomenLg from "@/assets/collage-women-lg.avif";
 import collageMenSm from "@/assets/collage-men-sm.avif";
 import collageMenLg from "@/assets/collage-men-lg.avif";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
-import { TRANSLATIONS } from "./lib/translations";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "../lib/translations";
 
 export function RedefinedSection({ language }: { language: PlatformLanguage }) {
   enum Tabs {

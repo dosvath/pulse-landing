@@ -1,7 +1,7 @@
 import couple from "@/assets/couple.avif";
-import WaitlistButton from "./components/WaitlistButton";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
-import { TRANSLATIONS } from "./lib/translations";
+import WaitlistButton from "../components/WaitlistButton";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "../lib/translations";
 
 export default function CtaSection({
   language,

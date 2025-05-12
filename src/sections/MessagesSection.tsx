@@ -4,8 +4,8 @@ import telegram from "@/assets/telegram.svg";
 import whatsapp from "@/assets/whatsapp.svg";
 import typingIndicator from "@/assets/typing-indicator.svg";
 import brain from "@/assets/brain.svg";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
-import { TRANSLATIONS } from "./lib/translations";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "../lib/translations";
 
 export default function MessagesSection({
   language,

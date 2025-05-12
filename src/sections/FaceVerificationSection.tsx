@@ -1,6 +1,6 @@
 import faceVerification from "@/assets/face-verification.avif";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
-import { TRANSLATIONS } from "./lib/translations";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "../lib/translations";
 
 export default function FaceVerificationSection({
   language,

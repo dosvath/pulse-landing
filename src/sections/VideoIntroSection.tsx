@@ -1,8 +1,8 @@
-import WaitlistButton from "./components/WaitlistButton";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
+import WaitlistButton from "../components/WaitlistButton";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
 import { Header } from "./Header";
-import { useMediaQuery } from "./hooks/useMediaQuery";
-import { TRANSLATIONS } from "./lib/translations";
+import { useMediaQuery } from "../hooks/useMediaQuery";
+import { TRANSLATIONS } from "../lib/translations";
 
 export function VideoIntroSection({
   language,

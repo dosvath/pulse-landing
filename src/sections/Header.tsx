@@ -1,9 +1,9 @@
 import logo from "@/assets/logo-w-text.svg";
-import { Button } from "./components/ui/button";
-import WaitlistButton from "./components/WaitlistButton";
-import LanguageSelector from "./components/LanguageSelector";
-import { PlatformLanguage } from "./generated-api/models/PlatformLanguage";
-import { TRANSLATIONS } from "./lib/translations";
+import { Button } from "../components/ui/button";
+import WaitlistButton from "../components/WaitlistButton";
+import LanguageSelector from "../components/LanguageSelector";
+import { PlatformLanguage } from "../generated-api/models/PlatformLanguage";
+import { TRANSLATIONS } from "../lib/translations";
 
 export function Header({
   language,
