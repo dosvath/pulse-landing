@@ -11,14 +11,13 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-xl font-semibold">1. Introduction</h2>
           <p>
-            Pulse is a global 18+ dating platform operated by PulseDate
-            Technologies Ltd., a company registered in Cyprus. We are committed
-            to protecting your privacy and handling your personal data in a
-            transparent and secure manner. This Privacy Policy explains how we
-            collect, use, store, and share your information when you use the
-            Pulse website or mobile application (the "Platform"). By using
-            Pulse, you agree to the practices described in this Policy and also
-            acknowledge our{" "}
+            Pulse is a dating platform operated by PulseDate Technologies Ltd.,
+            a company registered in Cyprus. We are committed to protecting your
+            privacy and handling your personal data in a transparent and secure
+            manner. This Privacy Policy explains how we collect, use, store, and
+            share your information when you use the Pulse website or mobile
+            application (the "Platform"). By using Pulse, you agree to the
+            practices described in this Policy and also acknowledge our{" "}
             <Link to="/terms" className="underline">
               Terms of Service
             </Link>{" "}
